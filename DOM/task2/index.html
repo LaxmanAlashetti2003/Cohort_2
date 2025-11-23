@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            
+        }
+        body {
+          background-color: black;
+        }
+        #main {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #box {
+            width: 600px;
+            height: 600px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        #box img {
+            width: 600px;
+            height: 600px;
+            border-radius: 10px;
+        }
+        #Btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 5px;
+            background-color: aquamarine;
+
+        }
+
+        :hover #Btn:active {
+            scale: 1.1;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div id="container">
+        <div id="box">
+         <img src="" alt=""></div>
+
+        <button id="Btn">Winner</button>
+    </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
