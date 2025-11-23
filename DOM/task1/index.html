@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        #Btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 5px;
+            background-color: aquamarine;
+
+        }
+
+        :hover #Btn:active {
+            scale: 1.1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box"></div>
+
+        <button id="Btn">Change Color</button>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
