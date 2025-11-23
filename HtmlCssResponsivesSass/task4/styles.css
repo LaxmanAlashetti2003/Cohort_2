@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cards{
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.cards img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.bottom{
+  height: 40%;
+  width: 100%;
+  color: white;
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(transparent,black);
+  transition: all ease 0.5s;
+  padding: 20px;
+  position: absolute;
+  bottom: -40%;
+ 
+ }
+.cards:hover .bottom{
+    bottom: 0;
+
+}

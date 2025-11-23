@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+//SCSS Mixin 
+@mixin centerFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin buttonStyle($bgColor, $textColor){
+    background-color: $bgColor;
+    color: $textColor;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: darken($bgColor, 10%);
+    }
+}
+// SCSS Nesting
+main{
+    height: 100vh;
+    width: 100%;
+    @include centerFlex;
+    background: linear-gradient(#667eea, #764ba2);
+
+    section{
+        background: white;
+        padding: 2rem 4rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        h1{
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .btn{
+            @include buttonStyle(#667eea, white);
+            margin-top: 1rem;
+        }
+    }
+}

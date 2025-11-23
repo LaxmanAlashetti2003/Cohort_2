@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+.poster {
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  border: 4px solid #f0f0f0;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden; 
+}
+
+h1 {
+  font-size: 18vw;
+  font-weight: 900;
+  line-height: 1;
+  color: #ffa500;
+  text-transform: uppercase;
+}
+
+.decorative-square {
+  position: absolute;
+  top: -10vmin;
+  right: -10vmin;
+  width: 35vmin;
+  height: 35vmin;
+}
+
+.subtitle {
+  font-size: 2.2rem; 
+  font-weight: 400;
+  margin: 0;
+}
+
+.body-text {
+  font-size: 1.6rem; /* Using 'rem': 1.6 * 10px = 16px */
+  line-height: 1.5em; 
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+}

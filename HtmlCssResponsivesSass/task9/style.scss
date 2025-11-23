@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+/* Core flex-column mixin for SASS/SCSS */
+@mixin flex-column($gap: 0rem){
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+/* 4K + Desktop layout, defaults for main, section, top elements */
+section {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    @include   flex-column(0rem);
+    align-items: center;
+}
+
+.view1 {
+    width: 100%;
+    @include   flex-column(1rem);
+    padding: 1rem;
+
+
+.top {
+    width: 100%;
+
+
+    img {
+    width: 100%;
+    border-radius: 10px;
+}
+}
+
+
+
+.bottom {
+    background-color: #292929;
+    border-radius: 10px;
+    padding: 1.2rem;
+    @include   flex-column(1.2rem);
+
+
+.text {
+    @include   flex-column(0.7rem);
+
+
+
+    h1 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgba(240, 255, 255, 0.87);
+}
+
+.text p {
+    font-weight: 100;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    line-height: 1.5;
+    color: #f4f2eda6;
+    width: 70%;
+}
+button {
+    width: fit-content;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+}
+}
+}
+}
+
+
+section.view2{
+   @include   flex-column(1rem);
+   width: 100%;
+   padding: 1rem;
+
+   .top,
+   .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .element{
+        text-align: center;
+        @include flex-column(0.2rem);
+
+        small{
+            opacity: 0.6;
+        }
+        h2{
+            font-size: 3rem;
+            font-weight: 300;
+        }
+    }
+
+   }
+}
+
+section.view3{
+   .top {
+    width: 100%;
+    padding: 1rem;
+
+    img {
+    width: 100%;
+    border-radius: 10px;
+}
+   }
+
+   .bottom{
+        background-color: #292929;
+        border-radius: 10px;
+        padding: 1.2rem;
+        @include   flex-column(1.2rem);
+
+        .text {
+    @include   flex-column(0.7rem);
+
+
+
+    h1 {
+    font-weight: 200;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgba(240, 255, 255, 0.87);
+}
+
+.text p {
+    font-weight: 100;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    line-height: 1.5;
+    color: #f4f2eda6;
+    width: 70%;
+}
+button {
+    width: fit-content;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+}
+}
+
+   }
+}
+@media (min-width: 900px){
+    main{
+
+        .view1{
+                flex-direction: row;
+                padding: 1rem 4rem;
+
+                .top, .bottom{
+                    width: 50%;
+                }
+
+                .bottom{
+                    justify-content: space-between;
+                    padding: 3rem;
+
+                    .text {
+                        gap: 1.5rem;
+
+                        h1{
+                            font-size: 3rem;
+                        }
+                        
+                        
+                        p{
+                        width: 80%;
+                        font-size: 1.2rem;
+                    }
+                }
+                }
+        }
+           
+        .view2{
+            flex-direction: row;
+            padding: 1rem 4rem;
+        }
+
+          .view3{
+                display: flex;
+                padding: 1rem 4rem;
+
+                .top, .bottom{
+                    width: 50%;
+                }
+
+                .bottom{
+                    justify-content: space-between;
+                    padding: 3rem;
+
+                    .text {
+                        gap: 1.5rem;
+
+                        h1{
+                            font-size: 3rem;
+                        }
+                        
+                        
+                        p{
+                        width: 80%;
+                        font-size: 1.2rem;
+                    }
+                }
+                }
+        }
+}
+}
+
+

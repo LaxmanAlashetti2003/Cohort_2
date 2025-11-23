@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+//SCSS Mixin 
+@mixin centerFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// SCSS Nesting
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+    section{
+        height: 100%;
+        flex-grow: 1;
+       background-size: cover;
+       background-position: center ;
+    }
+    section:hover{
+        flex-grow: 4;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+    }
+
+    section:nth-child(1){
+background-image: url(https://i.pinimg.com/736x/f6/d7/53/f6d753ddbfa7c8a37c59667744b8287b.jpg);  
+  }
+    section:nth-child(2){
+        background-image: url(https://i.pinimg.com/736x/57/d4/ed/57d4ed4edcafbff4d96fa9e7e183f419.jpg);
+    }
+    section:nth-child(3){
+        background-image: url(https://i.pinimg.com/1200x/67/80/0e/67800ea7ec44a39f02e9d2b52dbd5b39.jpg);
+    }
+    section:nth-child(4){
+        background-image: url(https://i.pinimg.com/1200x/7a/e0/97/7ae097fc71b969274261f575f69b8627.jpg);
+    }
+    section:nth-child(5){
+        background-image: url(https://i.pinimg.com/736x/bd/d5/dd/bdd5dd5590f8fc100ed4e34d861b0967.jpg);
+    }
+    h1{
+        @include centerFlex;
+        color: white;
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
