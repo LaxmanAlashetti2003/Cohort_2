@@ -46,5 +46,5 @@ button.addEventListener('click', function() {
     body.style.backgroundColor = winner.backgroundColor;
     img.src = winner.team;
 
-    button.textContent = `Winner: ${winner.teamName} - Captain: ${winner.captain}`;
+    button.textContent = `Winner: ${winner.teamName}  Captain: ${winner.captain}`;
 });
