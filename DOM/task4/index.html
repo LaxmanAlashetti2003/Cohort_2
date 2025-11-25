@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background-color: black;
+        background-image: url('https://i.pinimg.com/1200x/eb/46/9f/eb469f3e5217a852e2f2005b6bf1a8b2.jpg');
+        background-size: cover;
+        background-position: bottom;
+      }
+      #main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #card {
+        height: 300px;
+        width: 400px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 40px;
+      }
+     #outer {
+        height: 25px;
+        width: 100%;
+        background-color: rgb(78, 77, 77);
+        border-radius: 50px;
+      }
+        .inner {
+            height: 25px;
+            width: 0%;
+            background-color: black;
+            border-radius: 50px;
+        }
+        #Bottom {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #Bottom h2 {
+            font-size: 24px;
+            color: #000;
+        }
+        #Bottom button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        #Bottom button:hover {
+            background-color: grey;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <div id="main">
+      <div id="card">
+        <div id="outer">
+            <div class="inner"></div>
+        </div>
+
+        <div id="Bottom">
+            <h2>0</h2>
+            <button>Download</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
