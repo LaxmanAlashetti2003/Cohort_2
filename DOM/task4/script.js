@@ -17,6 +17,8 @@ button.addEventListener('click', function() {
     clearInterval(interval);
     button.textContent = "Downloaded";
     button.style.backgroundColor = "green";
+    button.style.pointerEvents = "none";
+    button.style.opacity = "0.6";
 
  }, 10000);
 });
