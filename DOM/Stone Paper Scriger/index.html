@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header id="heading">
+        <span class="stone fa-solid fa-hand-back-fist"></span> :
+        <span class="paper fa-solid fa-hand"></span> :
+        <span class="scissor fa-solid fa-hand-scissors"></span>
+    </header>
+
+    <button id="start" onclick="onStart()">Try your luck</button>
+
+    <div id="hero">
+        <div id="computer">
+            <span class="fa-solid fa-computer"></span>
+            <p>Hello! I am computer.</p>
+        </div>
+
+        <div id="loaderParent">
+            <div id="loader"></div>
+        </div>
+
+        <div id="user">
+            <span class="fa-solid fa-user-secret"></span>
+            <p>Hello! I am user.</p>
+        </div>
+    </div>
+
+    <div id="info">
+        <p>Select below cards and click on the try your luck button to start...</p>
+    </div>
+
+    <div id="options">
+        <div onclick="changeUserChoice('stone')" class="card">
+            <span class="stone fa-solid fa-hand-back-fist"></span>
+            <p>Stone</p>
+        </div>
+        <div onclick="changeUserChoice('paper')" class="card">
+            <span class="paper fa-solid fa-hand"></span>
+            <p>Paper</p>
+        </div>
+        <div onclick="changeUserChoice('scissor')" class="card">
+            <span class="scissor fa-solid fa-hand-scissors"></span>
+            <p>Scissor</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

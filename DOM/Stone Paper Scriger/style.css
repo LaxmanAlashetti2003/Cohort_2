@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+
+body {
+    color: white;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    object-fit: cover;
+    background: #1B1B1B;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+#heading {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#heading span {
+    font-size: 3rem;
+}
+
+.stone {
+    color: #7d7878;
+}
+
+.paper {
+    color: white;
+}
+
+.scissor {
+    color: silver;
+}
+
+#start {
+    color: black;
+    background: #9bceb5;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loaderParent {
+    width: 70px;
+    height: 70px;
+}
+
+#loader {
+    width: 100%;
+    display: none;
+    height: 100%;
+    border: 10px solid #363535;
+    border-radius: 50%;
+    border-right: 8px solid white;
+    animation: 1s linear infinite spin;
+}
+
+#computer,
+#user {
+    width: 300px;
+    height: 300px;
+    background-color: #9DF3DA;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#computer span,
+#user span {
+    font-size: 12rem;
+    margin-bottom: 20px;
+    color: #076D71;
+}
+
+#computer p,
+#user p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #6A3236;
+    font-weight: 600;
+}
+
+#info p {
+    margin: 50px auto 30px auto;
+    font-size: 1.3rem;
+    width: 500px;
+}
+
+#options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    margin: auto;
+}
+
+#options .card {
+    color: black;
+    width: 120px;
+    height: 120px;
+    font-weight: 700;
+    background-color: #DAE7DB;
+    font-size: 1.3rem;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#options .card span {
+    font-size: 4rem;
+    margin: 8px 0;
+}
