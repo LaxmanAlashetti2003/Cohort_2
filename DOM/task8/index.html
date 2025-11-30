@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanuman Cursor</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background: black;
+            font-family: Arial, sans-serif;
+            cursor: none;
+        }
+        main{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #Hanuman {
+            height: 500px;
+            width: 500px;
+        }
+        #cursor {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        /* Jai Shri Ram Text */
+        #textDiv {
+            position: absolute;
+            top: 20px;
+            font-size: 90px;
+            font-weight: bold;
+            color: orangered;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <main id="main">
+        
+        <div id="textDiv">Jai Shri Ram</div>
+
+        <img id="Hanuman" src="Hanuman-removebg-preview.png" alt="">
+        <img id="cursor" src="jay_Shri_Ram-removebg-preview.png" alt="">
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
